@@ -1,0 +1,1254 @@
+:: initializing oneAPI environment ...
+   bash: BASH_VERSION = 5.2.21(1)-release
+   args: Using "$@" for setvars.sh arguments: 
+:: compiler -- latest
+:: debugger -- latest
+:: mpi -- latest
+:: umf -- latest
+:: oneAPI environment initialized ::
+ 
+(base) ian-martin-ajzenszmidt@ian-martin-ajzenszmidt-CFSZ5-3:~$ nano 3dccc.f
+(base) ian-martin-ajzenszmidt@ian-martin-ajzenszmidt-CFSZ5-3:~$ ifx  3dccc.f -free -o 3dchessx
+(base) ian-martin-ajzenszmidt@ian-martin-ajzenszmidt-CFSZ5-3:~$ ./3dchessx
+ === 3D Chess in Fortran ===
+ 1. Human vs Human
+ 2. Human vs AI
+ 3. AI vs AI
+3
+ Enter AI search depth (1-4 recommended):
+4
+ 3D Chess Board - Level by Level
+ Current Player: White
+ Move Count:            0
+ 
+ Level            1
+   1 2 3 4 5 6 7 8
+ 1 R N B . . B N R 
+ 2 N . . . . . . N 
+ 3 B . . . . . . B 
+ 4 . . . Q . . . . 
+ 5 . . . . K . . . 
+ 6 B . . . . . . B 
+ 7 N . . . . . . N 
+ 8 R N B . . B N R 
+ 
+ Level            2
+   1 2 3 4 5 6 7 8
+ 1 P P P P P P P P 
+ 2 P P P P P P P P 
+ 3 P P P P P P P P 
+ 4 P P P P P P P P 
+ 5 P P P P P P P P 
+ 6 P P P P P P P P 
+ 7 P P P P P P P P 
+ 8 P P P P P P P P 
+ 
+ Level            3
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            4
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            5
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            6
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            7
+   1 2 3 4 5 6 7 8
+ 1 p p p p p p p p 
+ 2 p p p p p p p p 
+ 3 p p p p p p p p 
+ 4 p p p p p p p p 
+ 5 p p p p p p p p 
+ 6 p p p p p p p p 
+ 7 p p p p p p p p 
+ 8 p p p p p p p p 
+ 
+ Level            8
+   1 2 3 4 5 6 7 8
+ 1 r n b . . b n r 
+ 2 n . . . . . . n 
+ 3 b . . . . . . b 
+ 4 . . . q . . . . 
+ 5 . . . . k . . . 
+ 6 b . . . . . . b 
+ 7 n . . . . . . n 
+ 8 r n b . . b n r 
+ 
+ AI is thinking...
+ AI moves: (           4 ,           4 ,           1 ) -> (           4 ,
+           1 ,           1 )
+ 3D Chess Board - Level by Level
+ Current Player: Black
+ Move Count:            1
+ 
+ Level            1
+   1 2 3 4 5 6 7 8
+ 1 R N B Q . B N R 
+ 2 N . . . . . . N 
+ 3 B . . . . . . B 
+ 4 . . . . . . . . 
+ 5 . . . . K . . . 
+ 6 B . . . . . . B 
+ 7 N . . . . . . N 
+ 8 R N B . . B N R 
+ 
+ Level            2
+   1 2 3 4 5 6 7 8
+ 1 P P P P P P P P 
+ 2 P P P P P P P P 
+ 3 P P P P P P P P 
+ 4 P P P P P P P P 
+ 5 P P P P P P P P 
+ 6 P P P P P P P P 
+ 7 P P P P P P P P 
+ 8 P P P P P P P P 
+ 
+ Level            3
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            4
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            5
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            6
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            7
+   1 2 3 4 5 6 7 8
+ 1 p p p p p p p p 
+ 2 p p p p p p p p 
+ 3 p p p p p p p p 
+ 4 p p p p p p p p 
+ 5 p p p p p p p p 
+ 6 p p p p p p p p 
+ 7 p p p p p p p p 
+ 8 p p p p p p p p 
+ 
+ Level            8
+   1 2 3 4 5 6 7 8
+ 1 r n b . . b n r 
+ 2 n . . . . . . n 
+ 3 b . . . . . . b 
+ 4 . . . q . . . . 
+ 5 . . . . k . . . 
+ 6 b . . . . . . b 
+ 7 n . . . . . . n 
+ 8 r n b . . b n r 
+ 
+ AI is thinking...
+ AI moves: (           1 ,           1 ,           7 ) -> (           1 ,
+           1 ,           5 )
+ 3D Chess Board - Level by Level
+ Current Player: White
+ Move Count:            2
+ 
+ Level            1
+   1 2 3 4 5 6 7 8
+ 1 R N B Q . B N R 
+ 2 N . . . . . . N 
+ 3 B . . . . . . B 
+ 4 . . . . . . . . 
+ 5 . . . . K . . . 
+ 6 B . . . . . . B 
+ 7 N . . . . . . N 
+ 8 R N B . . B N R 
+ 
+ Level            2
+   1 2 3 4 5 6 7 8
+ 1 P P P P P P P P 
+ 2 P P P P P P P P 
+ 3 P P P P P P P P 
+ 4 P P P P P P P P 
+ 5 P P P P P P P P 
+ 6 P P P P P P P P 
+ 7 P P P P P P P P 
+ 8 P P P P P P P P 
+ 
+ Level            3
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            4
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            5
+   1 2 3 4 5 6 7 8
+ 1 p . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            6
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            7
+   1 2 3 4 5 6 7 8
+ 1 . p p p p p p p 
+ 2 p p p p p p p p 
+ 3 p p p p p p p p 
+ 4 p p p p p p p p 
+ 5 p p p p p p p p 
+ 6 p p p p p p p p 
+ 7 p p p p p p p p 
+ 8 p p p p p p p p 
+ 
+ Level            8
+   1 2 3 4 5 6 7 8
+ 1 r n b . . b n r 
+ 2 n . . . . . . n 
+ 3 b . . . . . . b 
+ 4 . . . q . . . . 
+ 5 . . . . k . . . 
+ 6 b . . . . . . b 
+ 7 n . . . . . . n 
+ 8 r n b . . b n r 
+ 
+ AI is thinking...
+ AI moves: (           4 ,           1 ,           1 ) -> (           5 ,
+           1 ,           1 )
+ 3D Chess Board - Level by Level
+ Current Player: Black
+ Move Count:            3
+ 
+ Level            1
+   1 2 3 4 5 6 7 8
+ 1 R N B . Q B N R 
+ 2 N . . . . . . N 
+ 3 B . . . . . . B 
+ 4 . . . . . . . . 
+ 5 . . . . K . . . 
+ 6 B . . . . . . B 
+ 7 N . . . . . . N 
+ 8 R N B . . B N R 
+ 
+ Level            2
+   1 2 3 4 5 6 7 8
+ 1 P P P P P P P P 
+ 2 P P P P P P P P 
+ 3 P P P P P P P P 
+ 4 P P P P P P P P 
+ 5 P P P P P P P P 
+ 6 P P P P P P P P 
+ 7 P P P P P P P P 
+ 8 P P P P P P P P 
+ 
+ Level            3
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            4
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            5
+   1 2 3 4 5 6 7 8
+ 1 p . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            6
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            7
+   1 2 3 4 5 6 7 8
+ 1 . p p p p p p p 
+ 2 p p p p p p p p 
+ 3 p p p p p p p p 
+ 4 p p p p p p p p 
+ 5 p p p p p p p p 
+ 6 p p p p p p p p 
+ 7 p p p p p p p p 
+ 8 p p p p p p p p 
+ 
+ Level            8
+   1 2 3 4 5 6 7 8
+ 1 r n b . . b n r 
+ 2 n . . . . . . n 
+ 3 b . . . . . . b 
+ 4 . . . q . . . . 
+ 5 . . . . k . . . 
+ 6 b . . . . . . b 
+ 7 n . . . . . . n 
+ 8 r n b . . b n r 
+ 
+ AI is thinking...
+ AI moves: (           1 ,           1 ,           5 ) -> (           1 ,
+           1 ,           4 )
+ 3D Chess Board - Level by Level
+ Current Player: White
+ Move Count:            4
+ 
+ Level            1
+   1 2 3 4 5 6 7 8
+ 1 R N B . Q B N R 
+ 2 N . . . . . . N 
+ 3 B . . . . . . B 
+ 4 . . . . . . . . 
+ 5 . . . . K . . . 
+ 6 B . . . . . . B 
+ 7 N . . . . . . N 
+ 8 R N B . . B N R 
+ 
+ Level            2
+   1 2 3 4 5 6 7 8
+ 1 P P P P P P P P 
+ 2 P P P P P P P P 
+ 3 P P P P P P P P 
+ 4 P P P P P P P P 
+ 5 P P P P P P P P 
+ 6 P P P P P P P P 
+ 7 P P P P P P P P 
+ 8 P P P P P P P P 
+ 
+ Level            3
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            4
+   1 2 3 4 5 6 7 8
+ 1 p . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            5
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            6
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            7
+   1 2 3 4 5 6 7 8
+ 1 . p p p p p p p 
+ 2 p p p p p p p p 
+ 3 p p p p p p p p 
+ 4 p p p p p p p p 
+ 5 p p p p p p p p 
+ 6 p p p p p p p p 
+ 7 p p p p p p p p 
+ 8 p p p p p p p p 
+ 
+ Level            8
+   1 2 3 4 5 6 7 8
+ 1 r n b . . b n r 
+ 2 n . . . . . . n 
+ 3 b . . . . . . b 
+ 4 . . . q . . . . 
+ 5 . . . . k . . . 
+ 6 b . . . . . . b 
+ 7 n . . . . . . n 
+ 8 r n b . . b n r 
+ 
+ AI is thinking...
+ AI moves: (           5 ,           1 ,           1 ) -> (           4 ,
+           1 ,           1 )
+ 3D Chess Board - Level by Level
+ Current Player: Black
+ Move Count:            5
+ 
+ Level            1
+   1 2 3 4 5 6 7 8
+ 1 R N B Q . B N R 
+ 2 N . . . . . . N 
+ 3 B . . . . . . B 
+ 4 . . . . . . . . 
+ 5 . . . . K . . . 
+ 6 B . . . . . . B 
+ 7 N . . . . . . N 
+ 8 R N B . . B N R 
+ 
+ Level            2
+   1 2 3 4 5 6 7 8
+ 1 P P P P P P P P 
+ 2 P P P P P P P P 
+ 3 P P P P P P P P 
+ 4 P P P P P P P P 
+ 5 P P P P P P P P 
+ 6 P P P P P P P P 
+ 7 P P P P P P P P 
+ 8 P P P P P P P P 
+ 
+ Level            3
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            4
+   1 2 3 4 5 6 7 8
+ 1 p . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            5
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            6
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            7
+   1 2 3 4 5 6 7 8
+ 1 . p p p p p p p 
+ 2 p p p p p p p p 
+ 3 p p p p p p p p 
+ 4 p p p p p p p p 
+ 5 p p p p p p p p 
+ 6 p p p p p p p p 
+ 7 p p p p p p p p 
+ 8 p p p p p p p p 
+ 
+ Level            8
+   1 2 3 4 5 6 7 8
+ 1 r n b . . b n r 
+ 2 n . . . . . . n 
+ 3 b . . . . . . b 
+ 4 . . . q . . . . 
+ 5 . . . . k . . . 
+ 6 b . . . . . . b 
+ 7 n . . . . . . n 
+ 8 r n b . . b n r 
+ 
+ AI is thinking...
+ AI moves: (           2 ,           1 ,           7 ) -> (           2 ,
+           1 ,           5 )
+ 3D Chess Board - Level by Level
+ Current Player: White
+ Move Count:            6
+ 
+ Level            1
+   1 2 3 4 5 6 7 8
+ 1 R N B Q . B N R 
+ 2 N . . . . . . N 
+ 3 B . . . . . . B 
+ 4 . . . . . . . . 
+ 5 . . . . K . . . 
+ 6 B . . . . . . B 
+ 7 N . . . . . . N 
+ 8 R N B . . B N R 
+ 
+ Level            2
+   1 2 3 4 5 6 7 8
+ 1 P P P P P P P P 
+ 2 P P P P P P P P 
+ 3 P P P P P P P P 
+ 4 P P P P P P P P 
+ 5 P P P P P P P P 
+ 6 P P P P P P P P 
+ 7 P P P P P P P P 
+ 8 P P P P P P P P 
+ 
+ Level            3
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            4
+   1 2 3 4 5 6 7 8
+ 1 p . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            5
+   1 2 3 4 5 6 7 8
+ 1 . p . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            6
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            7
+   1 2 3 4 5 6 7 8
+ 1 . . p p p p p p 
+ 2 p p p p p p p p 
+ 3 p p p p p p p p 
+ 4 p p p p p p p p 
+ 5 p p p p p p p p 
+ 6 p p p p p p p p 
+ 7 p p p p p p p p 
+ 8 p p p p p p p p 
+ 
+ Level            8
+   1 2 3 4 5 6 7 8
+ 1 r n b . . b n r 
+ 2 n . . . . . . n 
+ 3 b . . . . . . b 
+ 4 . . . q . . . . 
+ 5 . . . . k . . . 
+ 6 b . . . . . . b 
+ 7 n . . . . . . n 
+ 8 r n b . . b n r 
+ 
+ AI is thinking...
+ AI moves: (           4 ,           1 ,           1 ) -> (           5 ,
+           1 ,           1 )
+ 3D Chess Board - Level by Level
+ Current Player: Black
+ Move Count:            7
+ 
+ Level            1
+   1 2 3 4 5 6 7 8
+ 1 R N B . Q B N R 
+ 2 N . . . . . . N 
+ 3 B . . . . . . B 
+ 4 . . . . . . . . 
+ 5 . . . . K . . . 
+ 6 B . . . . . . B 
+ 7 N . . . . . . N 
+ 8 R N B . . B N R 
+ 
+ Level            2
+   1 2 3 4 5 6 7 8
+ 1 P P P P P P P P 
+ 2 P P P P P P P P 
+ 3 P P P P P P P P 
+ 4 P P P P P P P P 
+ 5 P P P P P P P P 
+ 6 P P P P P P P P 
+ 7 P P P P P P P P 
+ 8 P P P P P P P P 
+ 
+ Level            3
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            4
+   1 2 3 4 5 6 7 8
+ 1 p . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            5
+   1 2 3 4 5 6 7 8
+ 1 . p . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            6
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            7
+   1 2 3 4 5 6 7 8
+ 1 . . p p p p p p 
+ 2 p p p p p p p p 
+ 3 p p p p p p p p 
+ 4 p p p p p p p p 
+ 5 p p p p p p p p 
+ 6 p p p p p p p p 
+ 7 p p p p p p p p 
+ 8 p p p p p p p p 
+ 
+ Level            8
+   1 2 3 4 5 6 7 8
+ 1 r n b . . b n r 
+ 2 n . . . . . . n 
+ 3 b . . . . . . b 
+ 4 . . . q . . . . 
+ 5 . . . . k . . . 
+ 6 b . . . . . . b 
+ 7 n . . . . . . n 
+ 8 r n b . . b n r 
+ 
+ AI is thinking...
+ AI moves: (           2 ,           1 ,           5 ) -> (           2 ,
+           1 ,           4 )
+ 3D Chess Board - Level by Level
+ Current Player: White
+ Move Count:            8
+ 
+ Level            1
+   1 2 3 4 5 6 7 8
+ 1 R N B . Q B N R 
+ 2 N . . . . . . N 
+ 3 B . . . . . . B 
+ 4 . . . . . . . . 
+ 5 . . . . K . . . 
+ 6 B . . . . . . B 
+ 7 N . . . . . . N 
+ 8 R N B . . B N R 
+ 
+ Level            2
+   1 2 3 4 5 6 7 8
+ 1 P P P P P P P P 
+ 2 P P P P P P P P 
+ 3 P P P P P P P P 
+ 4 P P P P P P P P 
+ 5 P P P P P P P P 
+ 6 P P P P P P P P 
+ 7 P P P P P P P P 
+ 8 P P P P P P P P 
+ 
+ Level            3
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            4
+   1 2 3 4 5 6 7 8
+ 1 p p . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            5
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            6
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            7
+   1 2 3 4 5 6 7 8
+ 1 . . p p p p p p 
+ 2 p p p p p p p p 
+ 3 p p p p p p p p 
+ 4 p p p p p p p p 
+ 5 p p p p p p p p 
+ 6 p p p p p p p p 
+ 7 p p p p p p p p 
+ 8 p p p p p p p p 
+ 
+ Level            8
+   1 2 3 4 5 6 7 8
+ 1 r n b . . b n r 
+ 2 n . . . . . . n 
+ 3 b . . . . . . b 
+ 4 . . . q . . . . 
+ 5 . . . . k . . . 
+ 6 b . . . . . . b 
+ 7 n . . . . . . n 
+ 8 r n b . . b n r 
+ 
+ AI is thinking...
+ AI moves: (           5 ,           1 ,           1 ) -> (           4 ,
+           1 ,           1 )
+ 3D Chess Board - Level by Level
+ Current Player: Black
+ Move Count:            9
+ 
+ Level            1
+   1 2 3 4 5 6 7 8
+ 1 R N B Q . B N R 
+ 2 N . . . . . . N 
+ 3 B . . . . . . B 
+ 4 . . . . . . . . 
+ 5 . . . . K . . . 
+ 6 B . . . . . . B 
+ 7 N . . . . . . N 
+ 8 R N B . . B N R 
+ 
+ Level            2
+   1 2 3 4 5 6 7 8
+ 1 P P P P P P P P 
+ 2 P P P P P P P P 
+ 3 P P P P P P P P 
+ 4 P P P P P P P P 
+ 5 P P P P P P P P 
+ 6 P P P P P P P P 
+ 7 P P P P P P P P 
+ 8 P P P P P P P P 
+ 
+ Level            3
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            4
+   1 2 3 4 5 6 7 8
+ 1 p p . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            5
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            6
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            7
+   1 2 3 4 5 6 7 8
+ 1 . . p p p p p p 
+ 2 p p p p p p p p 
+ 3 p p p p p p p p 
+ 4 p p p p p p p p 
+ 5 p p p p p p p p 
+ 6 p p p p p p p p 
+ 7 p p p p p p p p 
+ 8 p p p p p p p p 
+ 
+ Level            8
+   1 2 3 4 5 6 7 8
+ 1 r n b . . b n r 
+ 2 n . . . . . . n 
+ 3 b . . . . . . b 
+ 4 . . . q . . . . 
+ 5 . . . . k . . . 
+ 6 b . . . . . . b 
+ 7 n . . . . . . n 
+ 8 r n b . . b n r 
+ 
+ AI is thinking...
+ AI moves: (           3 ,           1 ,           7 ) -> (           3 ,
+           1 ,           5 )
+ 3D Chess Board - Level by Level
+ Current Player: White
+ Move Count:           10
+ 
+ Level            1
+   1 2 3 4 5 6 7 8
+ 1 R N B Q . B N R 
+ 2 N . . . . . . N 
+ 3 B . . . . . . B 
+ 4 . . . . . . . . 
+ 5 . . . . K . . . 
+ 6 B . . . . . . B 
+ 7 N . . . . . . N 
+ 8 R N B . . B N R 
+ 
+ Level            2
+   1 2 3 4 5 6 7 8
+ 1 P P P P P P P P 
+ 2 P P P P P P P P 
+ 3 P P P P P P P P 
+ 4 P P P P P P P P 
+ 5 P P P P P P P P 
+ 6 P P P P P P P P 
+ 7 P P P P P P P P 
+ 8 P P P P P P P P 
+ 
+ Level            3
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            4
+   1 2 3 4 5 6 7 8
+ 1 p p . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            5
+   1 2 3 4 5 6 7 8
+ 1 . . p . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            6
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            7
+   1 2 3 4 5 6 7 8
+ 1 . . . p p p p p 
+ 2 p p p p p p p p 
+ 3 p p p p p p p p 
+ 4 p p p p p p p p 
+ 5 p p p p p p p p 
+ 6 p p p p p p p p 
+ 7 p p p p p p p p 
+ 8 p p p p p p p p 
+ 
+ Level            8
+   1 2 3 4 5 6 7 8
+ 1 r n b . . b n r 
+ 2 n . . . . . . n 
+ 3 b . . . . . . b 
+ 4 . . . q . . . . 
+ 5 . . . . k . . . 
+ 6 b . . . . . . b 
+ 7 n . . . . . . n 
+ 8 r n b . . b n r 
+ 
+ AI is thinking...
+ AI moves: (           4 ,           1 ,           1 ) -> (           5 ,
+           1 ,           1 )
+ 3D Chess Board - Level by Level
+ Current Player: Black
+ Move Count:           11
+ 
+ Level            1
+   1 2 3 4 5 6 7 8
+ 1 R N B . Q B N R 
+ 2 N . . . . . . N 
+ 3 B . . . . . . B 
+ 4 . . . . . . . . 
+ 5 . . . . K . . . 
+ 6 B . . . . . . B 
+ 7 N . . . . . . N 
+ 8 R N B . . B N R 
+ 
+ Level            2
+   1 2 3 4 5 6 7 8
+ 1 P P P P P P P P 
+ 2 P P P P P P P P 
+ 3 P P P P P P P P 
+ 4 P P P P P P P P 
+ 5 P P P P P P P P 
+ 6 P P P P P P P P 
+ 7 P P P P P P P P 
+ 8 P P P P P P P P 
+ 
+ Level            3
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            4
+   1 2 3 4 5 6 7 8
+ 1 p p . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            5
+   1 2 3 4 5 6 7 8
+ 1 . . p . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            6
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            7
+   1 2 3 4 5 6 7 8
+ 1 . . . p p p p p 
+ 2 p p p p p p p p 
+ 3 p p p p p p p p 
+ 4 p p p p p p p p 
+ 5 p p p p p p p p 
+ 6 p p p p p p p p 
+ 7 p p p p p p p p 
+ 8 p p p p p p p p 
+ 
+ Level            8
+   1 2 3 4 5 6 7 8
+ 1 r n b . . b n r 
+ 2 n . . . . . . n 
+ 3 b . . . . . . b 
+ 4 . . . q . . . . 
+ 5 . . . . k . . . 
+ 6 b . . . . . . b 
+ 7 n . . . . . . n 
+ 8 r n b . . b n r 
+ 
+ AI is thinking...
+^[[A^[[A^[[A^[[A^[[A AI moves: (           3 ,           1 ,           5 ) -> (           3 ,
+           1 ,           4 )
+ 3D Chess Board - Level by Level
+ Current Player: White
+ Move Count:           12
+ 
+ Level            1
+   1 2 3 4 5 6 7 8
+ 1 R N B . Q B N R 
+ 2 N . . . . . . N 
+ 3 B . . . . . . B 
+ 4 . . . . . . . . 
+ 5 . . . . K . . . 
+ 6 B . . . . . . B 
+ 7 N . . . . . . N 
+ 8 R N B . . B N R 
+ 
+ Level            2
+   1 2 3 4 5 6 7 8
+ 1 P P P P P P P P 
+ 2 P P P P P P P P 
+ 3 P P P P P P P P 
+ 4 P P P P P P P P 
+ 5 P P P P P P P P 
+ 6 P P P P P P P P 
+ 7 P P P P P P P P 
+ 8 P P P P P P P P 
+ 
+ Level            3
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            4
+   1 2 3 4 5 6 7 8
+ 1 p p p . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            5
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            6
+   1 2 3 4 5 6 7 8
+ 1 . . . . . . . . 
+ 2 . . . . . . . . 
+ 3 . . . . . . . . 
+ 4 . . . . . . . . 
+ 5 . . . . . . . . 
+ 6 . . . . . . . . 
+ 7 . . . . . . . . 
+ 8 . . . . . . . . 
+ 
+ Level            7
+   1 2 3 4 5 6 7 8
+ 1 . . . p p p p p 
+ 2 p p p p p p p p 
+ 3 p p p p p p p p 
+ 4 p p p p p p p p 
+ 5 p p p p p p p p 
+ 6 p p p p p p p p 
+ 7 p p p p p p p p 
+ 8 p p p p p p p p 
+ 
+ Level            8
+   1 2 3 4 5 6 7 8
+ 1 r n b . . b n r 
+ 2 n . . . . . . n 
+ 3 b . . . . . . b 
+ 4 . . . q . . . . 
+ 5 . . . . k . . . 
+ 6 b . . . . . . b 
+ 7 n . . . . . . n 
+ 8 r n b . . b n r 
+ 
+ AI is thinking...
+
+
